@@ -434,7 +434,7 @@ SOFTWARE.
             entries_length = 2 + tag_count * 12;
         }
         var entries = "";
-        var values = "";
+        var values = "\x00\x00\x00\x00"; // Updated this line from an empty string
         var key;
 
         for (var key in ifd_dict) {
